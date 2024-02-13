@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                *{
+            margin: 0px;
+            padding : 0px;
+        }
+        #div1{
+            border-right: 2px solid black;
+            height:1900px;
+            width: 25%;
+        }
+        #navbar{
+            display: flex;
+            flex-direction: column;
+            list-style-type: circle;
+        }
+        ul li {
+            padding: 2%;
+
+            
+        }
+        ul li a{
+            text-decoration: none;
+            color: crimson;
+        }
+        #main{
+           display: flex;
+        }
+        #div2{
+            width: 100%;
+            height: 728px;
+        }
+        p{
+            text-indent: 13%;
+            width: 90%;
+            height: 60px;
+            margin-left: 3%;
+            text-align: justify;
+
+        }
+        div{
+            display: inline-block;
+            width: 100%;
+        }
+        ol{
+            margin-left: 4%;;
+        }
+        ul{
+            margin-left: 3%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="div1">
+            <br>
+           <center><h2>Javascript concepts</h2></center>
+           <br>
+        <ul id="navbar">
+            <li><a href="#">General topics in programming language</a></li>
+            <li><a href="#">Difference between scripting and programing language.</a></li>
+            <li><a href="#">Variables</a></li>
+            <li><a href="#">Rules for Variables</a></li>
+        </ul>
+        </div>
+        <div id="div2">
+           <center><h1>Java Script</h1></center>
+           <div>
+            <h2>General Features in Programming languages.</h2>
+            <br>
+            <pre>
+            Variables
+            data-types 
+            operators
+            control statements
+            functions
+            </pre>
+           </div>
+           <div>
+            <h2>Difference between scripting and programing language </h2>
+            <br>
+            <p>
+                Basically, all scripting languages are programming languages. The theoretical difference between the two is that scripting languages do not require the compilation step and are rather interpreted. For example, normally, a C program needs to be compiled before running whereas normally, a scripting language like JavaScript or PHP need not be compiled.   
+    
+    Generally, compiled programs run faster than interpreted programs because they are first converted native machine code. Also, compilers read and analyze the code only once, and report the errors collectively that the code might have, but the interpreter will read and analyze the code statements each time it meets them and halts at that very instance if there is some error. In practice, the distinction between the two is getting blurred owing to improved computation capabilities of the modern hardware and advanced coding practices.   
+    
+    Another point to be noted is that while classifying a language as scripting language or programming language, the environment on which it would execute must be taken into consideration. The reason why this is important is that we can design an interpreter for C language and use it as a scripting language, and at the same time, we can design a compiler for JavaScript and use it as a non-scripting(compiled language). A live example of this is V8, the JavaScript engine of Google Chrome, which compiles the JavaScript code into machine code, rather than interpreting it.
+            </p>
+           </div>
+           <br>
+           <br>
+        <div>
+            <h2>Variables:</h2>
+            <br>
+            <br>
+           <p style="text-indent:10px"><b>Definnation:</b>Variables are containers to store the different kind of data in programming language.</p>
+           <h3>Variable in JavaScript defines in Three ways</h3>
+           <br>
+           <ol>
+            <li>Variable declaration</li>
+            <li>Variable Assignment</li>
+            <li>Variable initialization</li>
+           </ol>
+           <ul>
+            <li>Variable Declaration : Here we declare the variables with syntax <mark>"Var nameofvariable"</mark> where "var" is the scope or life of variable and "nameofvariable" is the name of the variable</li>
+            <li>Variable Assignment : After declaration we assign the values to the variable <mark>namevaribale = value</mark> before it the value is <mark>undefined</mark> then after assignment we resign a value</li>
+            <li> Variable initialization : variable declaration and variable assignemnt is called as variable initialization i.e <mark>"var a = 4"</mark></li>
+           </ul>
+           <h2>Hoisting</h2>
+           <br>
+           <p>By default the <mark>declaration in the JS goes top of the code</mark> inspite of there respective positions in the code is called hoisting.Only declaration will goes up and declaration in initialization goes up.</p>
+        </div>
+        <div>
+            <h2>Data Types :</h2>
+            <br>
+            <h3>There are two types in it:</h3>
+            <br>
+            <ol>
+                <li>Primitive datatypes:</li>
+                <li>Non-primitive datatypes</li>
+            </ol>
+            <br>
+            <h3>Primitive datatypes</h3>
+            <br>
+               <p>The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as <mark>in-built data types</mark>.</p>
+            <h3>Non-primitive datatypes.</h3>
+            <p>The data types that are derived from primitive data types of the JavaScript language are known as non-primitive data types. It is also known as derived data types or reference data types.</p>
+        </div>
+    </div>
+</body>
+</html>
